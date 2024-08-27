@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge ONE: Encriptador de Texto</title>
+        <link rel="icon" href="./svg/favicon.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/overlays.css" />
+        <link rel="stylesheet" href="./css/contents.css" />
+    </head>
+    <body>
+        <div class="app-details">
+            <div class="app-details__container">
+                <header class="app-details__header">
+                    <h1 class="app-details__title">Encriptador</h1>
+                    <small class="app-details__subtitle"
+                        >Un proyecto de
+                        <a
+                            href="https://www.oracle.com/mx/education/oracle-next-education/"
+                            class="app-details__sponsor app-details__sponsor--one"
+                            target="_blank"
+                            >ONE</a
+                        >
+                        y
+                        <a
+                            href="https://www.aluracursos.com/"
+                            class="app-details__sponsor app-details__sponsor--alura"
+                            target="_blank"
+                            >Alura</a
+                        >.
+                    </small>
+                </header>
+
+                <img
+                    class="app-details__img"
+                    src="./svg/encrypt_icon.svg.png"
+                />
+
+                <p class="app-details__description">
+                    Encripta y desencripta tus textos de una forma
+                    <span>sencilla</span>.
+                </p>
+
+                <div class="button-wrapper" id="start-button-container">
+                    <button id="start-button">Comenzar</button>
+                </div>
+
+                <div class="button-wrapper" id="rules-button-container">
+                    <button id="rules-modal-button">Reglas</button>
+                </div>
+            </div>
+        </div>
+
+        <aside id="app-actions-section" class="app-actions">
+            <div class="app-actions__container">
+                <h2 class="app-actions__title">¿Qué hacer?</h2>
+
+                <div class="app-actions__buttons-container">
+                    <div class="button-wrapper">
+                        <button id="encryption-modal-button">
+                            Encriptar Texto
+                        </button>
+                    </div>
+                    <div class="button-wrapper">
+                        <button id="decryption-modal-button">
+                            Desencriptar Texto
+                        </button>
+                    </div>
+                </div>
+
+                <footer class="app-footer">
+                    <div class="app-footer__wrapper">
+                        <span class="app-footer__subtitle">Creado por...</span>
+                        <a
+                            class="app-footer__link"
+                            href="https://github.com/jorgecortesgtz"
+                            target="_blank"
+                        >
+                            <i
+                                class="app-footer__github-logo devicon-github-original"
+                            ></i>
+                            <strong class="app-footer__author-name"
+                                >Jorge Cortés
+                                <small class="app-footer__click-my-name"
+                                    >Hazme click
+                                </small>
+                            </strong>
+                        </a>
+                    </div>
+                </footer>
+                <small id="creation-date">Fecha de Creación: Agosto, 2024</small>
+            </div>
+        </aside>
+    </body>
+    <script type="module" src="./js/index.js"></script>
+</html>

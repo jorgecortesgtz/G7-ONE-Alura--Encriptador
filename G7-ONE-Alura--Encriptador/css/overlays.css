@@ -1,0 +1,118 @@
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-card {
+    position: relative;
+    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color--2);
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    animation: openModal 0.25s ease-out forwards;
+    color: var(--color--white-2);
+}
+
+.modal-card h3,
+.alert-card h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#close-modal-button,
+#close-alert-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color--white-2);
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 1.5rem;
+}
+
+#close-modal-button:hover,
+#close-alert-button:hover {
+    transform: scale(1.15);
+    color: var(--color--white-2);
+    background-color: rgb(220, 0, 131);
+    box-shadow: var(--buttons-shadow-size) rgba(220, 0, 131, 0.5);
+}
+
+#alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-card {
+    position: relative;
+    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color--2);
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    animation: openModal 0.25s ease-out forwards;
+    color: var(--color--white-2);
+}
+
+@media (min-width: 768px) {
+    .modal-card,
+    .alert-card {
+        width: 60%;
+        font-size: 1.8rem;
+    }
+
+    .modal-card h3,
+    .alert-card h3 {
+        font-size: 3rem;
+    }
+
+    #close-modal-button {
+        top: 2rem;
+        right: 2rem;
+        transform: scale(1.25);
+    }
+
+    #close-modal-button:hover {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes openModal {
+    0% {
+        opacity: 0%;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
